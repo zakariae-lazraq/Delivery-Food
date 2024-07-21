@@ -1,0 +1,98 @@
+/* Default styles */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff; /* Adjust background color as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual */
+}
+
+.navbar .logo {
+  height: 40px; /* Adjust logo height as needed */
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.navbar .nav-links li {
+  cursor: pointer;
+}
+
+.navbar .nav-links li.active {
+  border-bottom: 2px solid #555;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right-nav .signin-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 15px;
+  background-color: tomato; /* Button background color */
+  color: #ffffff; /* Button text color */
+  cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .navbar .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .right-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .right-nav .signin-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

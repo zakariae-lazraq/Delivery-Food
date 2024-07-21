@@ -1,0 +1,29 @@
+.download-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.download-container h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.download-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.download-btn-container img {
+  width: 180px; /* Adjust size as needed */
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.download-btn-container img:hover {
+  transform: scale(1.1);
+}
